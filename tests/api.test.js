@@ -11,7 +11,7 @@ test('notes are returned as json', async () => {
 });
 
 
-test('there are two notes', async () => {
+test('there are three notes', async () => {
   const response = await api.get('/api/notes');
   expect(response.body).toHaveLength(3);
 });
